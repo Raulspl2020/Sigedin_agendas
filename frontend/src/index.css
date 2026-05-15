@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  font-family: Inter, Roboto, sans-serif;
+  background-color: #F4F7F6;
+  color: #1A1A1A;
+  --sg-green-700: #006431;
+  --sg-green-800: #005229;
+  --sg-green-100: #e9f5ee;
+  --sg-gray-050: #f7faf8;
+  --sg-gray-100: #eef2ef;
+  --sg-gray-200: #d9e2dc;
+  --sg-gray-500: #5d6b63;
+  --sg-shadow-card: 0 8px 22px rgba(5, 31, 32, 0.08);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.sigedin-form-theme div.bg-white[class*='rounded'],
+.sigedin-form-theme section.bg-white[class*='rounded'],
+.sigedin-form-theme form.bg-white[class*='rounded'] {
+  border-radius: 14px;
+  box-shadow: var(--sg-shadow-card);
+  border-color: var(--sg-gray-100);
+}
+
+.sigedin-form-theme form {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: var(--sg-shadow-card);
+}
+
+.sigedin-form-theme h1,
+.sigedin-form-theme h2 {
+  color: var(--sg-green-700);
+}
+
+.sigedin-form-theme label {
+  color: var(--sg-gray-500);
+}
+
+.sigedin-form-theme input:not([type='checkbox']):not([type='radio']):not([type='file']),
+.sigedin-form-theme select,
+.sigedin-form-theme textarea {
+  border-radius: 12px;
+  border-color: var(--sg-gray-200);
+  background-color: var(--sg-gray-050);
+}
+
+.sigedin-form-theme input:not([type='checkbox']):not([type='radio']):not([type='file']):focus,
+.sigedin-form-theme select:focus,
+.sigedin-form-theme textarea:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--sg-green-700) 55%, white);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--sg-green-700) 12%, white);
+}
+
+.sigedin-form-theme button.bg-institutional-blue,
+.sigedin-form-theme a.bg-institutional-blue,
+.sigedin-form-theme button.bg-institutional-green,
+.sigedin-form-theme a.bg-institutional-green {
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 100, 49, 0.18);
+}
+
+.sigedin-form-theme button.bg-institutional-blue,
+.sigedin-form-theme a.bg-institutional-blue,
+.sigedin-form-theme .bg-institutional-blue {
+  background-color: var(--sg-green-700);
+  color: #fff;
+}
+
+.sigedin-form-theme button.bg-institutional-blue:hover,
+.sigedin-form-theme a.bg-institutional-blue:hover,
+.sigedin-form-theme button.bg-institutional-green:hover,
+.sigedin-form-theme a.bg-institutional-green:hover {
+  background-color: var(--sg-green-800);
+}
+
+.sigedin-form-theme .bg-institutional-blue\/10,
+.sigedin-form-theme .bg-institutional-green\/10 {
+  background-color: var(--sg-green-100);
+}
+
+.sigedin-form-theme .text-institutional-blue,
+.sigedin-form-theme .text-institutional-green {
+  color: var(--sg-green-700);
+}
+
+.sigedin-form-theme table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sigedin-form-theme table thead tr {
+  background: color-mix(in srgb, var(--sg-green-700) 8%, white);
+}
+
+.sigedin-form-theme table thead th {
+  color: var(--sg-green-700);
+  border-bottom: 1px solid var(--sg-gray-200);
+}
+
+.sigedin-form-theme table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.sigedin-form-theme table tbody tr:hover {
+  background: color-mix(in srgb, var(--sg-green-700) 4%, white);
+}
+
+/* Contraste global: texto blanco sobre contenedores verdes */
+:is(
+  .bg-institutional-green,
+  .bg-institutional-dark,
+  .bg-institutional-blue,
+  .bg-primary,
+  .bg-success,
+  .badge-success,
+  .total-bar,
+  .summary-bar,
+  [class*='bg-[#051F20]'],
+  [class*='bg-[#235347]'],
+  [class*='bg-[#173831]'],
+  [class*='bg-[#006431]'],
+  [class*='bg-[#005229]'],
+  [class*='bg-[#1F9D78]'],
+  [class*='bg-[#8CB79B]'],
+  [class*='bg-green-6'],
+  [class*='bg-green-7'],
+  [class*='bg-green-8'],
+  [class*='bg-green-9'],
+  [class*='bg-emerald-6'],
+  [class*='bg-emerald-7'],
+  [class*='bg-emerald-8'],
+  [class*='bg-emerald-9']
+):not(:disabled):not([aria-disabled='true']) {
+  color: #fff !important;
+}
+
+:is(
+  .bg-institutional-green,
+  .bg-institutional-dark,
+  .bg-institutional-blue,
+  .bg-primary,
+  .bg-success,
+  .badge-success,
+  .total-bar,
+  .summary-bar,
+  [class*='bg-[#051F20]'],
+  [class*='bg-[#235347]'],
+  [class*='bg-[#173831]'],
+  [class*='bg-[#006431]'],
+  [class*='bg-[#005229]'],
+  [class*='bg-[#1F9D78]'],
+  [class*='bg-[#8CB79B]'],
+  [class*='bg-green-6'],
+  [class*='bg-green-7'],
+  [class*='bg-green-8'],
+  [class*='bg-green-9'],
+  [class*='bg-emerald-6'],
+  [class*='bg-emerald-7'],
+  [class*='bg-emerald-8'],
+  [class*='bg-emerald-9']
+):not(:disabled):not([aria-disabled='true']) * {
+  color: inherit !important;
+}
