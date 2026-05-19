@@ -1,4 +1,4 @@
-﻿node_modules/
+node_modules/
 dist/
 build/
 .env
@@ -6,6 +6,12 @@ build/
 .env.production
 backend/node_modules/
 frontend/node_modules/
+backend/dist/
+frontend/dist/
 *.log
 .DS_Store
 Thumbs.db
+.git/
+AGENTS.md
+DEV_HISTORY.md
+PROJECT_LOG.md

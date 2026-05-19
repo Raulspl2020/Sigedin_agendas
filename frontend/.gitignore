@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+cat >> .gitignore <<EOF
+AGENTS.md
+DEV_HISTORY.md
+PROJECT_LOG.md
+EOF

@@ -1,0 +1,34 @@
+services:
+  sigedin_backend:
+    container_name: sigedin_backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - ./backend/.env
+    environment:
+      PORT: 3001
+    restart: unless-stopped
+    volumes:
+      - ./backend/uploads:/app/uploads
+    networks:
+      - sigedin_network
+
+  sigedin_frontend:
+    container_name: sigedin_frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: /api
+    depends_on:
+      - sigedin_backend
+    ports:
+      - "15739:80"
+    restart: unless-stopped
+    networks:
+      - sigedin_network
+
+networks:
+  sigedin_network:
+    external: true
