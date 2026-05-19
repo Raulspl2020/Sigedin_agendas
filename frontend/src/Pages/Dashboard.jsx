@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import SeleccionPeriodo from '../components/SeleccionPeriodo';
 import api from '../services/api';
 import {

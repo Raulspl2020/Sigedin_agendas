@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 import TipoActividadForm from '../Components/TipoActividadForm';
 import {

@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import { toast } from 'react-toastify';
 import api from '../services/api';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import { useAuth } from '../context/AuthContext';
 import TableActionButtons from '../Components/TableActionButtons';
 

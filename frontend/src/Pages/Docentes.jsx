@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 import {
     Plus,

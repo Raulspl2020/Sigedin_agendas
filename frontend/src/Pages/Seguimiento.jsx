@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 import {
     AlertCircle,

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Save, ShieldCheck, User, Key } from 'lucide-react';
 import api from '../services/api';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import FormErrorBanner from '../Components/FormErrorBanner';
 import { extraerMensajeError } from '../services/apiErrors';
 import { toast } from 'react-toastify';

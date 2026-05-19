@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 import FacultadForm from '../Components/FacultadForm';
 import ProgramaForm from '../Components/ProgramaForm';

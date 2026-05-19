@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { ChevronDown, Eraser, Eye, FileSpreadsheet, Filter, Search } from 'lucide-react';
 import { toast } from 'react-toastify';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 
 const PAGE_SIZE = 20;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 import { extraerMensajeError } from '../services/apiErrors';
 import { Plus, CalendarRange, Search, Loader2, Filter } from 'lucide-react';

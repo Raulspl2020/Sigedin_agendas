@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import api from '../services/api';
 import { Plus, Search, Loader2, ShieldCheck, UserCircle, CheckCircle, XCircle } from 'lucide-react';
 import { toast } from 'react-toastify';

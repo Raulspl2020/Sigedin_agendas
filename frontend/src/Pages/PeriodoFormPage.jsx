@@ -11,7 +11,7 @@ import {
     Trash2,
 } from 'lucide-react';
 import api from '../services/api';
-import Layout from '../components/Layout';
+import Layout from '../Components/Layout';
 import FormErrorBanner from '../Components/FormErrorBanner';
 import { extraerMensajeError } from '../services/apiErrors';
 import { toast } from 'react-toastify';
